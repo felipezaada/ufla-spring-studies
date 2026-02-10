@@ -1,0 +1,22 @@
+[
+  {"id":1000,"nome":"Nature Dragon","tipo":"Nature","nivel":10,"vida":1000,"ataque":300,"chanceCritico":0.1,"habEspecial":"Semente de Poder"},
+  {"id":1001,"nome":"Firebird Dragon","tipo":"Firebird","nivel":12,"vida":1200,"ataque":350,"chanceCritico":0.15,"habEspecial":"Sopro de Fogo"},
+  {"id":1002,"nome":"Mercury Dragon","tipo":"Mercury","nivel":15,"vida":1500,"ataque":400,"chanceCritico":0.2,"habEspecial":"Toque de Mercurio"},
+  {"id":1003,"nome":"Gummy Dragon","tipo":"Gummy","nivel":18,"vida":1800,"ataque":450,"chanceCritico":0.25,"habEspecial":"Geleia Pegajosa"},
+  {"id":1004,"nome":"Lantern Fish Dragon","tipo":"Lantern Fish","nivel":20,"vida":2000,"ataque":500,"chanceCritico":0.3,"habEspecial":"Luz Profunda"},
+  {"id":1005,"nome":"Tropical Dragon","tipo":"Tropical","nivel":22,"vida":2200,"ataque":550,"chanceCritico":0.35,"habEspecial":"Tempestade Tropical"},
+  {"id":1006,"nome":"Zombie Dragon","tipo":"Zombie","nivel":25,"vida":2500,"ataque":600,"chanceCritico":0.4,"habEspecial":"Mordida Zumbi"},
+  {"id":1007,"nome":"Petroleum Dragon","tipo":"Petroleum","nivel":28,"vida":2800,"ataque":650,"chanceCritico":0.45,"habEspecial":"Oleo Escorregadio"},
+  {"id":1008,"nome":"Dandelion Dragon","tipo":"Dandelion","nivel":30,"vida":3000,"ataque":700,"chanceCritico":0.5,"habEspecial":"Polen Alergico"},
+  {"id":1009,"nome":"Jade Dragon","tipo":"Jade","nivel":32,"vida":3200,"ataque":750,"chanceCritico":0.55,"habEspecial":"Pele de Jade"},
+  {"id":1010,"nome":"Star Dragon","tipo":"Star","nivel":35,"vida":3500,"ataque":800,"chanceCritico":0.6,"habEspecial":"Brilho Estelar"},
+  {"id":1011,"nome":"Terra Dragon","tipo":"Terra","nivel":38,"vida":3800,"ataque":850,"chanceCritico":0.65,"habEspecial":"Terremoto"},
+  {"id":1012,"nome":"Flaming Rock Dragon","tipo":"Flaming Rock","nivel":40,"vida":4000,"ataque":900,"chanceCritico":0.7,"habEspecial":"Rocha em Chamas"},
+  {"id":1013,"nome":"Armadillo Dragon","tipo":"Armadillo","nivel":42,"vida":4200,"ataque":950,"chanceCritico":0.75,"habEspecial":"Escudo de Aco"},
+  {"id":1014,"nome":"Cloud Dragon","tipo":"Cloud","nivel":45,"vida":4500,"ataque":1000,"chanceCritico":0.8,"habEspecial":"Nuvem de Chuva"},
+  {"id":1015,"nome":"Laser Dragon","tipo":"Laser","nivel":48,"vida":4800,"ataque":1050,"chanceCritico":0.85,"habEspecial":"Raio Laser"},
+  {"id":1016,"nome":"Mud Dragon","tipo":"Mud","nivel":50,"vida":5000,"ataque":1100,"chanceCritico":0.9,"habEspecial":"Lama Toxica"},
+  {"id":1017,"nome":"Nenufar Dragon","tipo":"Nenufar","nivel":52,"vida":5200,"ataque":1150,"chanceCritico":0.95,"habEspecial":"Folha Protetora"},
+  {"id":1018,"nome":"Hedgehog Dragon","tipo":"Hedgehog","nivel":55,"vida":5500,"ataque":1200,"chanceCritico":1,"habEspecial":"Espinhos Afiados"},
+  {"id":1019,"nome":"Icecube Dragon","tipo":"Icecube","nivel":58,"vida":5800,"ataque":1250,"chanceCritico":1.05,"habEspecial":"Gelo Congelante"}
+]
