@@ -1,6 +1,6 @@
 package com.ufla.felipe.service;
 
-import com.ufla.felipe.models.Dragao;
+import com.ufla.felipe.models.DragaoModel;
 import jakarta.annotation.PostConstruct;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.stereotype.Service;
@@ -14,7 +14,7 @@ import java.util.List;
 @Service
 public class DragaoService {
 
-    private final List<Dragao> dragoesSistema = new ArrayList<>();
+    private final List<DragaoModel> dragoesSistema = new ArrayList<>();
 
     @PostConstruct
     public void init() {
@@ -24,19 +24,19 @@ public class DragaoService {
 
     public int partition(int inicio, int fim){
         int i = inicio;
-        Dragao pivot = dragoesSistema.get(fim);
+        DragaoModel pivot = dragoesSistema.get(fim);
 
         for(int j = inicio; j < fim; j++){
-            Dragao dragaoJ = dragoesSistema.get(j);
+            DragaoModel dragaoJ = dragoesSistema.get(j);
 
             if(dragaoJ.getNome().compareTo(pivot.getNome()) < 0){
-                Dragao aux = dragoesSistema.get(i);
+                DragaoModel aux = dragoesSistema.get(i);
                 dragoesSistema.set(i, dragoesSistema.get(j));
                 dragoesSistema.set(j, aux);
                 i++;
             }
         }
-        Dragao aux = dragoesSistema.get(i);
+        DragaoModel aux = dragoesSistema.get(i);
         dragoesSistema.set(i, dragoesSistema.get(fim));
         dragoesSistema.set(fim, aux);
 
@@ -53,7 +53,7 @@ public class DragaoService {
 
     public int buscaBinaria(int inicio, int fim, String k) {
         int meio = (inicio + fim) / 2;
-        Dragao tempDragao = dragoesSistema.get(meio);
+        DragaoModel tempDragao = dragoesSistema.get(meio);
 
         if(inicio <= fim) {
             if (tempDragao.getNome().equals(k)) return meio;
@@ -66,13 +66,13 @@ public class DragaoService {
     public String escreverNomes(){
         StringBuilder nomes = new StringBuilder();
         for (int i = 0 ; i < dragoesSistema.size() ; i++) {
-            Dragao dragaoTemp =  dragoesSistema.get(i);
+            DragaoModel dragaoTemp =  dragoesSistema.get(i);
             nomes.append(dragaoTemp.getNome()).append('\n');
         }
         return nomes.toString();
     }
 
-    public void inserirDragao(List<Dragao> novoDragao){
+    public void inserirDragao(List<DragaoModel> novoDragao){
         dragoesSistema.addAll(novoDragao);
     }
 
@@ -83,7 +83,7 @@ public class DragaoService {
     public void carregarDragoesJSON() {
         try {
             ClassPathResource resource = new ClassPathResource("json/dragoes.json");
-            List<Dragao> dragaoTemp = new ObjectMapper().readValue(resource.getInputStream(), new TypeReference<>(){});
+            List<DragaoModel> dragaoTemp = new ObjectMapper().readValue(resource.getInputStream(), new TypeReference<>(){});
             inserirDragao(dragaoTemp);
             System.out.println("Inserido com sucesso!");
         } catch (IOException e) {

@@ -1,6 +1,6 @@
 package com.ufla.felipe.controllers;
 
-import com.ufla.felipe.models.Dragao;
+import com.ufla.felipe.models.DragaoModel;
 import com.ufla.felipe.service.DragaoService;
 import org.springframework.web.bind.annotation.*;
 
@@ -17,7 +17,7 @@ public class DragoesController {
     }
 
     @PostMapping("/inserir")
-    public void inserirDragoes(@RequestBody List<Dragao> novosDragoes) {
+    public void inserirDragoes(@RequestBody List<DragaoModel> novosDragoes) {
         dragaoService.inserirDragao(novosDragoes);
     }
 

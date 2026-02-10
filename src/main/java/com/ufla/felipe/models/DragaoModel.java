@@ -6,7 +6,7 @@ import lombok.Setter;
 @Getter
 @Setter
 
-public class Dragao {
+public class DragaoModel {
     private int id;
     private String nome;
     private String tipo;
