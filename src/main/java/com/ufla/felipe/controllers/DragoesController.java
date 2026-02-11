@@ -21,8 +21,14 @@ public class DragoesController {
         return dragaoService.escreverDragoes();
     }
 
-    @GetMapping("/ordenar")
-    public void ordenar(){ dragaoService.ordenarDragoes(); }
+    @GetMapping("/ordenar/nome")
+    public void ordenarNome(){ dragaoService.ordenarDragoes(0); }
+
+    @GetMapping("/ordenar/tipo")
+    public void ordenarTipo(){ dragaoService.ordenarDragoes(1); }
+
+    @GetMapping("/ordenar/id")
+    public void ordenarId(){ dragaoService.ordenarDragoes(2); }
 
     @GetMapping("/buscar")
     public String buscar(@RequestParam String nome){
@@ -33,4 +39,5 @@ public class DragoesController {
     public void inserir(@RequestBody List<DragaoDTO> novosDragoes){
         dragaoService.inserirDragao(novosDragoes);
     }
+
 }

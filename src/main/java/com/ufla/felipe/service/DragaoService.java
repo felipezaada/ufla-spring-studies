@@ -35,8 +35,8 @@ public class DragaoService {
         return jsonDragoes.escreverNomes();
     }
 
-    public void ordenarDragoes(){
-        ordenadorDragoes.quickSort(0, listaDragoes.contaDragao() - 1);
+    public void ordenarDragoes(int entrada){
+        ordenadorDragoes.quickSort(0, listaDragoes.contaDragao() - 1, entrada);
     }
 
     public String buscaDragao(String nome){
@@ -46,4 +46,5 @@ public class DragaoService {
     public void inserirDragao(List<DragaoDTO> dragaoTemp){
         listaDragoes.inserirDragao(dragaoTemp);
     }
+
 }

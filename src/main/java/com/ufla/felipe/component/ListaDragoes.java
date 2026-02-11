@@ -8,6 +8,7 @@ import java.util.List;
 
 @Component
 public class ListaDragoes {
+
     private final List<DragaoDTO> dragoesSistema = new ArrayList<>();
 
     public DragaoDTO getDragao(int posicao){
@@ -25,4 +26,5 @@ public class ListaDragoes {
     public void inserirDragao(List<DragaoDTO> novoDragao){
         dragoesSistema.addAll(novoDragao);
     }
+
 }

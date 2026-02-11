@@ -33,7 +33,8 @@ public class jsonDragoes {
         StringBuilder nomes = new StringBuilder();
         for (int i = 0 ; i < listaDragoes.contaDragao() ; i++) {
             DragaoDTO dragaoTemp =  listaDragoes.getDragao(i);
-            nomes.append(dragaoTemp.getNome()).append('\n');
+            nomes.append(dragaoTemp.getId()).append(" Nome: ").append(dragaoTemp.getNome())
+                    .append(" Tipo: ").append(dragaoTemp.getTipo()).append('\n');
         }
         return nomes.toString();
     }
