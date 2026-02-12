@@ -27,13 +27,16 @@ public class DragaoService {
 
     @PostConstruct
     public void init() {
-        jsonDragoes.carregarDragoesJSON();
+        jsonDragoes.carregarDragoesJSON(listaDragoes.getDragoesDefinitivo());
         listaDragoes.cloneTemp();
-        System.out.println(jsonDragoes.escreverNomes());
     }
 
-    public String escreverDragoes(){
-        return jsonDragoes.escreverNomes();
+    public String escreverDragoesDefinitivo(){
+        return jsonDragoes.escreverNomes(listaDragoes.getDragoesDefinitivo());
+    }
+
+    public String escreverDragoesTemp(){
+        return jsonDragoes.escreverNomes(listaDragoes.getDragoesTemp());
     }
 
     public void ordenarDragoes(int entrada){

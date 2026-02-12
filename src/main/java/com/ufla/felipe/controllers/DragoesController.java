@@ -20,7 +20,8 @@ public class DragoesController {
 
     @GetMapping("/escrever")
     public String escrever(){
-        return dragaoService.escreverDragoes();
+        return "Lista Temporária: \n" + dragaoService.escreverDragoesTemp() +
+                "\nLista Definitiva: \n" + dragaoService.escreverDragoesDefinitivo();
     }
 
     @GetMapping("/ordenar/nome")
