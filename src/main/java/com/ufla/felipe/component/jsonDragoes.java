@@ -23,12 +23,17 @@ public class jsonDragoes {
     }
 
     public String escreverNomes(List<DragaoDTO> dragoesList){
-        StringBuilder nomes = new StringBuilder();
-        for (int i = 0 ; i < dragoesList.size() ; i++) {
-            DragaoDTO dragaoTemp =  dragoesList.get(i);
-            nomes.append(dragaoTemp.getId()).append(" Nome: ").append(dragaoTemp.getNome())
-                    .append(" Tipo: ").append(dragaoTemp.getTipo()).append('\n');
+        StringBuilder info = new StringBuilder();
+        for (DragaoDTO dragaoTemp : dragoesList) {
+            info.append(dragaoTemp.getId())
+                    .append(" ").append(dragaoTemp.getNome())
+                    .append(" ").append(dragaoTemp.getNivel())
+                    .append(" ").append(dragaoTemp.getVida())
+                    .append(" ").append(dragaoTemp.getAtaque())
+                    .append(" ").append(dragaoTemp.getChanceCritico())
+                    .append(" ").append(dragaoTemp.getHabEspecial())
+                    .append('\n');
         }
-        return nomes.toString();
+        return info.toString();
     }
 }

@@ -1,22 +1,1082 @@
 [
-  {"id":1000,"nome":"Nature Dragon","tipo":"Nature","nivel":10,"vida":1000,"ataque":300,"chanceCritico":0.1,"habEspecial":"Semente de Poder"},
-  {"id":1001,"nome":"Firebird Dragon","tipo":"Firebird","nivel":12,"vida":1200,"ataque":350,"chanceCritico":0.15,"habEspecial":"Sopro de Fogo"},
-  {"id":1002,"nome":"Mercury Dragon","tipo":"Mercury","nivel":15,"vida":1500,"ataque":400,"chanceCritico":0.2,"habEspecial":"Toque de Mercurio"},
-  {"id":1003,"nome":"Gummy Dragon","tipo":"Gummy","nivel":18,"vida":1800,"ataque":450,"chanceCritico":0.25,"habEspecial":"Geleia Pegajosa"},
-  {"id":1004,"nome":"Lantern Fish Dragon","tipo":"Lantern Fish","nivel":20,"vida":2000,"ataque":500,"chanceCritico":0.3,"habEspecial":"Luz Profunda"},
-  {"id":1005,"nome":"Tropical Dragon","tipo":"Tropical","nivel":22,"vida":2200,"ataque":550,"chanceCritico":0.35,"habEspecial":"Tempestade Tropical"},
-  {"id":1006,"nome":"Zombie Dragon","tipo":"Zombie","nivel":25,"vida":2500,"ataque":600,"chanceCritico":0.4,"habEspecial":"Mordida Zumbi"},
-  {"id":1007,"nome":"Petroleum Dragon","tipo":"Petroleum","nivel":28,"vida":2800,"ataque":650,"chanceCritico":0.45,"habEspecial":"Oleo Escorregadio"},
-  {"id":1008,"nome":"Dandelion Dragon","tipo":"Dandelion","nivel":30,"vida":3000,"ataque":700,"chanceCritico":0.5,"habEspecial":"Polen Alergico"},
-  {"id":1009,"nome":"Jade Dragon","tipo":"Jade","nivel":32,"vida":3200,"ataque":750,"chanceCritico":0.55,"habEspecial":"Pele de Jade"},
-  {"id":1010,"nome":"Star Dragon","tipo":"Star","nivel":35,"vida":3500,"ataque":800,"chanceCritico":0.6,"habEspecial":"Brilho Estelar"},
-  {"id":1011,"nome":"Terra Dragon","tipo":"Terra","nivel":38,"vida":3800,"ataque":850,"chanceCritico":0.65,"habEspecial":"Terremoto"},
-  {"id":1012,"nome":"Flaming Rock Dragon","tipo":"Flaming Rock","nivel":40,"vida":4000,"ataque":900,"chanceCritico":0.7,"habEspecial":"Rocha em Chamas"},
-  {"id":1013,"nome":"Armadillo Dragon","tipo":"Armadillo","nivel":42,"vida":4200,"ataque":950,"chanceCritico":0.75,"habEspecial":"Escudo de Aco"},
-  {"id":1014,"nome":"Cloud Dragon","tipo":"Cloud","nivel":45,"vida":4500,"ataque":1000,"chanceCritico":0.8,"habEspecial":"Nuvem de Chuva"},
-  {"id":1015,"nome":"Laser Dragon","tipo":"Laser","nivel":48,"vida":4800,"ataque":1050,"chanceCritico":0.85,"habEspecial":"Raio Laser"},
-  {"id":1016,"nome":"Mud Dragon","tipo":"Mud","nivel":50,"vida":5000,"ataque":1100,"chanceCritico":0.9,"habEspecial":"Lama Toxica"},
-  {"id":1017,"nome":"Nenufar Dragon","tipo":"Nenufar","nivel":52,"vida":5200,"ataque":1150,"chanceCritico":0.95,"habEspecial":"Folha Protetora"},
-  {"id":1018,"nome":"Hedgehog Dragon","tipo":"Hedgehog","nivel":55,"vida":5500,"ataque":1200,"chanceCritico":1,"habEspecial":"Espinhos Afiados"},
-  {"id":1019,"nome":"Icecube Dragon","tipo":"Icecube","nivel":58,"vida":5800,"ataque":1250,"chanceCritico":1.05,"habEspecial":"Gelo Congelante"}
+  {
+    "id": 1000,
+    "nome": "Nature Dragon",
+    "tipo": "Nature",
+    "nivel": 10,
+    "vida": 1000,
+    "ataque": 300,
+    "chanceCritico": 0.1,
+    "habEspecial": "Semente de Poder"
+  },
+  {
+    "id": 1001,
+    "nome": "Firebird Dragon",
+    "tipo": "Firebird",
+    "nivel": 12,
+    "vida": 1200,
+    "ataque": 350,
+    "chanceCritico": 0.15,
+    "habEspecial": "Sopro de Fogo"
+  },
+  {
+    "id": 1002,
+    "nome": "Mercury Dragon",
+    "tipo": "Mercury",
+    "nivel": 15,
+    "vida": 1500,
+    "ataque": 400,
+    "chanceCritico": 0.2,
+    "habEspecial": "Toque de Mercurio"
+  },
+  {
+    "id": 1003,
+    "nome": "Gummy Dragon",
+    "tipo": "Gummy",
+    "nivel": 18,
+    "vida": 1800,
+    "ataque": 450,
+    "chanceCritico": 0.25,
+    "habEspecial": "Geleia Pegajosa"
+  },
+  {
+    "id": 1004,
+    "nome": "Lantern Fish Dragon",
+    "tipo": "Lantern Fish",
+    "nivel": 20,
+    "vida": 2000,
+    "ataque": 500,
+    "chanceCritico": 0.3,
+    "habEspecial": "Luz Profunda"
+  },
+  {
+    "id": 1005,
+    "nome": "Tropical Dragon",
+    "tipo": "Tropical",
+    "nivel": 22,
+    "vida": 2200,
+    "ataque": 550,
+    "chanceCritico": 0.35,
+    "habEspecial": "Tempestade Tropical"
+  },
+  {
+    "id": 1006,
+    "nome": "Zombie Dragon",
+    "tipo": "Zombie",
+    "nivel": 25,
+    "vida": 2500,
+    "ataque": 600,
+    "chanceCritico": 0.4,
+    "habEspecial": "Mordida Zumbi"
+  },
+  {
+    "id": 1007,
+    "nome": "Petroleum Dragon",
+    "tipo": "Petroleum",
+    "nivel": 28,
+    "vida": 2800,
+    "ataque": 650,
+    "chanceCritico": 0.45,
+    "habEspecial": "Oleo Escorregadio"
+  },
+  {
+    "id": 1008,
+    "nome": "Dandelion Dragon",
+    "tipo": "Dandelion",
+    "nivel": 30,
+    "vida": 3000,
+    "ataque": 700,
+    "chanceCritico": 0.5,
+    "habEspecial": "Polen Alergico"
+  },
+  {
+    "id": 1009,
+    "nome": "Jade Dragon",
+    "tipo": "Jade",
+    "nivel": 32,
+    "vida": 3200,
+    "ataque": 750,
+    "chanceCritico": 0.55,
+    "habEspecial": "Pele de Jade"
+  },
+  {
+    "id": 1010,
+    "nome": "Star Dragon",
+    "tipo": "Star",
+    "nivel": 35,
+    "vida": 3500,
+    "ataque": 800,
+    "chanceCritico": 0.6,
+    "habEspecial": "Brilho Estelar"
+  },
+  {
+    "id": 1011,
+    "nome": "Terra Dragon",
+    "tipo": "Terra",
+    "nivel": 38,
+    "vida": 3800,
+    "ataque": 850,
+    "chanceCritico": 0.65,
+    "habEspecial": "Terremoto"
+  },
+  {
+    "id": 1012,
+    "nome": "Flaming Rock Dragon",
+    "tipo": "Flaming Rock",
+    "nivel": 40,
+    "vida": 4000,
+    "ataque": 900,
+    "chanceCritico": 0.7,
+    "habEspecial": "Rocha em Chamas"
+  },
+  {
+    "id": 1013,
+    "nome": "Armadillo Dragon",
+    "tipo": "Armadillo",
+    "nivel": 42,
+    "vida": 4200,
+    "ataque": 950,
+    "chanceCritico": 0.75,
+    "habEspecial": "Escudo de Aco"
+  },
+  {
+    "id": 1014,
+    "nome": "Cloud Dragon",
+    "tipo": "Cloud",
+    "nivel": 45,
+    "vida": 4500,
+    "ataque": 1000,
+    "chanceCritico": 0.8,
+    "habEspecial": "Nuvem de Chuva"
+  },
+  {
+    "id": 1015,
+    "nome": "Laser Dragon",
+    "tipo": "Laser",
+    "nivel": 48,
+    "vida": 4800,
+    "ataque": 1050,
+    "chanceCritico": 0.85,
+    "habEspecial": "Raio Laser"
+  },
+  {
+    "id": 1016,
+    "nome": "Mud Dragon",
+    "tipo": "Mud",
+    "nivel": 50,
+    "vida": 5000,
+    "ataque": 1100,
+    "chanceCritico": 0.9,
+    "habEspecial": "Lama Toxica"
+  },
+  {
+    "id": 1017,
+    "nome": "Nenufar Dragon",
+    "tipo": "Nenufar",
+    "nivel": 52,
+    "vida": 5200,
+    "ataque": 1150,
+    "chanceCritico": 0.95,
+    "habEspecial": "Folha Protetora"
+  },
+  {
+    "id": 1018,
+    "nome": "Hedgehog Dragon",
+    "tipo": "Hedgehog",
+    "nivel": 55,
+    "vida": 5500,
+    "ataque": 1200,
+    "chanceCritico": 1,
+    "habEspecial": "Espinhos Afiados"
+  },
+  {
+    "id": 1019,
+    "nome": "Icecube Dragon",
+    "tipo": "Icecube",
+    "nivel": 58,
+    "vida": 5800,
+    "ataque": 1250,
+    "chanceCritico": 1.05,
+    "habEspecial": "Gelo Congelante"
+  },
+  {
+    "id": 1020,
+    "nome": "Flame Dragon",
+    "tipo": "Flame",
+    "nivel": 60,
+    "vida": 6000,
+    "ataque": 1300,
+    "chanceCritico": 1.1,
+    "habEspecial": "Sopro de Fogo"
+  },
+  {
+    "id": 1021,
+    "nome": "Neon Dragon",
+    "tipo": "Neon",
+    "nivel": 62,
+    "vida": 6200,
+    "ataque": 1350,
+    "chanceCritico": 1.15,
+    "habEspecial": "Luz Neon"
+  },
+  {
+    "id": 1022,
+    "nome": "Pearl Dragon",
+    "tipo": "Pearl",
+    "nivel": 65,
+    "vida": 6500,
+    "ataque": 1400,
+    "chanceCritico": 1.2,
+    "habEspecial": "Perola Brilhante"
+  },
+  {
+    "id": 1023,
+    "nome": "Cool Fire Dragon",
+    "tipo": "Cool Fire",
+    "nivel": 68,
+    "vida": 6800,
+    "ataque": 1450,
+    "chanceCritico": 1.25,
+    "habEspecial": "Fogo Frio"
+  },
+  {
+    "id": 1024,
+    "nome": "Medieval Dragon",
+    "tipo": "Medieval",
+    "nivel": 70,
+    "vida": 7000,
+    "ataque": 1500,
+    "chanceCritico": 1.3,
+    "habEspecial": "Armadura Pesada"
+  },
+  {
+    "id": 1025,
+    "nome": "Penguin Dragon",
+    "tipo": "Penguin",
+    "nivel": 72,
+    "vida": 7200,
+    "ataque": 1550,
+    "chanceCritico": 1.35,
+    "habEspecial": "Pinguim Deslizante"
+  },
+  {
+    "id": 1026,
+    "nome": "Ice Dragon",
+    "tipo": "Ice",
+    "nivel": 75,
+    "vida": 7500,
+    "ataque": 1600,
+    "chanceCritico": 1.4,
+    "habEspecial": "Rajada de Gelo"
+  },
+  {
+    "id": 1027,
+    "nome": "Carnivore Plant Dragon",
+    "tipo": "Carnivore Plant",
+    "nivel": 78,
+    "vida": 7800,
+    "ataque": 1650,
+    "chanceCritico": 1.45,
+    "habEspecial": "Mordida Venenosa"
+  },
+  {
+    "id": 1028,
+    "nome": "Fluorescent Dragon",
+    "tipo": "Fluorescent",
+    "nivel": 80,
+    "vida": 8000,
+    "ataque": 1700,
+    "chanceCritico": 1.5,
+    "habEspecial": "Brilho Fluorescente"
+  },
+  {
+    "id": 1029,
+    "nome": "Electric Dragon",
+    "tipo": "Electric",
+    "nivel": 82,
+    "vida": 8200,
+    "ataque": 1750,
+    "chanceCritico": 1.55,
+    "habEspecial": "Choque Eletrico"
+  },
+  {
+    "id": 1030,
+    "nome": "Battery Dragon",
+    "tipo": "Battery",
+    "nivel": 85,
+    "vida": 8500,
+    "ataque": 1800,
+    "chanceCritico": 1.6,
+    "habEspecial": "Bateria Carregada"
+  },
+  {
+    "id": 1031,
+    "nome": "Sea Dragon",
+    "tipo": "Sea",
+    "nivel": 88,
+    "vida": 8800,
+    "ataque": 1850,
+    "chanceCritico": 1.65,
+    "habEspecial": "Tsunami"
+  },
+  {
+    "id": 1032,
+    "nome": "Metal Dragon",
+    "tipo": "Metal",
+    "nivel": 90,
+    "vida": 9000,
+    "ataque": 1900,
+    "chanceCritico": 1.7,
+    "habEspecial": "Escudo de Metal"
+  },
+  {
+    "id": 1033,
+    "nome": "Dark Dragon",
+    "tipo": "Dark",
+    "nivel": 92,
+    "vida": 9200,
+    "ataque": 1950,
+    "chanceCritico": 1.75,
+    "habEspecial": "Nevoa Negra"
+  },
+  {
+    "id": 1034,
+    "nome": "Legendary Dragon",
+    "tipo": "Legendary",
+    "nivel": 95,
+    "vida": 9500,
+    "ataque": 2000,
+    "chanceCritico": 1.8,
+    "habEspecial": "Aura Lendaria"
+  },
+  {
+    "id": 1035,
+    "nome": "Vampire Dragon",
+    "tipo": "Vampire",
+    "nivel": 98,
+    "vida": 9800,
+    "ataque": 2050,
+    "chanceCritico": 1.85,
+    "habEspecial": "Drenagem de Vida"
+  },
+  {
+    "id": 1036,
+    "nome": "Alpine Dragon",
+    "tipo": "Alpine",
+    "nivel": 100,
+    "vida": 10000,
+    "ataque": 2100,
+    "chanceCritico": 1.9,
+    "habEspecial": "Pico Nevado"
+  },
+  {
+    "id": 1037,
+    "nome": "Poo Dragon",
+    "tipo": "Poo",
+    "nivel": 102,
+    "vida": 10200,
+    "ataque": 2150,
+    "chanceCritico": 1.95,
+    "habEspecial": "Cheiro Terrivel"
+  },
+  {
+    "id": 1038,
+    "nome": "Volcano Dragon",
+    "tipo": "Volcano",
+    "nivel": 105,
+    "vida": 10500,
+    "ataque": 2200,
+    "chanceCritico": 2,
+    "habEspecial": "Erupcao Vulcanica"
+  },
+  {
+    "id": 1039,
+    "nome": "Blizzard Dragon",
+    "tipo": "Blizzard",
+    "nivel": 108,
+    "vida": 10800,
+    "ataque": 2250,
+    "chanceCritico": 2.05,
+    "habEspecial": "Nevasca"
+  },
+  {
+    "id": 1040,
+    "nome": "Rattlesnake Dragon",
+    "tipo": "Rattlesnake",
+    "nivel": 110,
+    "vida": 11000,
+    "ataque": 2300,
+    "chanceCritico": 2.1,
+    "habEspecial": "Chocalho Venenoso"
+  },
+  {
+    "id": 1041,
+    "nome": "Soccer Dragon",
+    "tipo": "Soccer",
+    "nivel": 112,
+    "vida": 11200,
+    "ataque": 2350,
+    "chanceCritico": 2.15,
+    "habEspecial": "Chute Poderoso"
+  },
+  {
+    "id": 1042,
+    "nome": "Platinum Dragon",
+    "tipo": "Platinum",
+    "nivel": 115,
+    "vida": 11500,
+    "ataque": 2400,
+    "chanceCritico": 2.2,
+    "habEspecial": "Brilho de Platina"
+  },
+  {
+    "id": 1043,
+    "nome": "Pirate Dragon",
+    "tipo": "Pirate",
+    "nivel": 118,
+    "vida": 11800,
+    "ataque": 2450,
+    "chanceCritico": 2.25,
+    "habEspecial": "Tesouro Escondido"
+  },
+  {
+    "id": 1044,
+    "nome": "Crystal Dragon",
+    "tipo": "Crystal",
+    "nivel": 120,
+    "vida": 12000,
+    "ataque": 2500,
+    "chanceCritico": 2.3,
+    "habEspecial": "Cristal Afiado"
+  },
+  {
+    "id": 1045,
+    "nome": "Wind Dragon",
+    "tipo": "Wind",
+    "nivel": 122,
+    "vida": 12200,
+    "ataque": 2550,
+    "chanceCritico": 2.35,
+    "habEspecial": "Vendaval"
+  },
+  {
+    "id": 1046,
+    "nome": "Mirror Dragon",
+    "tipo": "Mirror",
+    "nivel": 125,
+    "vida": 12500,
+    "ataque": 2600,
+    "chanceCritico": 2.4,
+    "habEspecial": "Reflexo Perfeito"
+  },
+  {
+    "id": 1047,
+    "nome": "Coral Dragon",
+    "tipo": "Coral",
+    "nivel": 128,
+    "vida": 12800,
+    "ataque": 2650,
+    "chanceCritico": 2.45,
+    "habEspecial": "Barreira de Coral"
+  },
+  {
+    "id": 1048,
+    "nome": "Spicy Dragon",
+    "tipo": "Spicy",
+    "nivel": 130,
+    "vida": 13000,
+    "ataque": 2700,
+    "chanceCritico": 2.5,
+    "habEspecial": "Pimenta Ardente"
+  },
+  {
+    "id": 1049,
+    "nome": "Waterfall Dragon",
+    "tipo": "Waterfall",
+    "nivel": 132,
+    "vida": 13200,
+    "ataque": 2750,
+    "chanceCritico": 2.55,
+    "habEspecial": "Jato d'Agua"
+  },
+  {
+    "id": 1050,
+    "nome": "Cactus Dragon",
+    "tipo": "Cactus",
+    "nivel": 135,
+    "vida": 13500,
+    "ataque": 2800,
+    "chanceCritico": 2.6,
+    "habEspecial": "Espinhos de Cacto"
+  },
+  {
+    "id": 1051,
+    "nome": "Storm Dragon",
+    "tipo": "Storm",
+    "nivel": 138,
+    "vida": 13800,
+    "ataque": 2850,
+    "chanceCritico": 2.65,
+    "habEspecial": "Tempestade de Raios"
+  },
+  {
+    "id": 1052,
+    "nome": "Ice Cream Dragon",
+    "tipo": "Ice Cream",
+    "nivel": 140,
+    "vida": 14000,
+    "ataque": 2900,
+    "chanceCritico": 2.7,
+    "habEspecial": "Congelamento Doce"
+  },
+  {
+    "id": 1053,
+    "nome": "Mojito Dragon",
+    "tipo": "Mojito",
+    "nivel": 142,
+    "vida": 14200,
+    "ataque": 2950,
+    "chanceCritico": 2.75,
+    "habEspecial": "Halito Refrescante"
+  },
+  {
+    "id": 1054,
+    "nome": "Chameleon Dragon",
+    "tipo": "Chameleon",
+    "nivel": 145,
+    "vida": 14500,
+    "ataque": 3000,
+    "chanceCritico": 2.8,
+    "habEspecial": "Camuflagem"
+  },
+  {
+    "id": 1055,
+    "nome": "Hot Metal Dragon",
+    "tipo": "Hot Metal",
+    "nivel": 148,
+    "vida": 14800,
+    "ataque": 3050,
+    "chanceCritico": 2.85,
+    "habEspecial": "Metal Derretido"
+  },
+  {
+    "id": 1056,
+    "nome": "Snowflake Dragon",
+    "tipo": "Snowflake",
+    "nivel": 150,
+    "vida": 15000,
+    "ataque": 3100,
+    "chanceCritico": 2.9,
+    "habEspecial": "Floco de Neve"
+  },
+  {
+    "id": 1057,
+    "nome": "Seashell Dragon",
+    "tipo": "Seashell",
+    "nivel": 152,
+    "vida": 15200,
+    "ataque": 3150,
+    "chanceCritico": 2.95,
+    "habEspecial": "Concha Protetora"
+  },
+  {
+    "id": 1058,
+    "nome": "Moose Dragon",
+    "tipo": "Moose",
+    "nivel": 155,
+    "vida": 15500,
+    "ataque": 3200,
+    "chanceCritico": 3,
+    "habEspecial": "Chifres Poderosos"
+  },
+  {
+    "id": 1059,
+    "nome": "Dragonfly Dragon",
+    "tipo": "Dragonfly",
+    "nivel": 158,
+    "vida": 15800,
+    "ataque": 3250,
+    "chanceCritico": 3.05,
+    "habEspecial": "Voo Rapido"
+  },
+  {
+    "id": 1060,
+    "nome": "Venom Dragon",
+    "tipo": "Venom",
+    "nivel": 160,
+    "vida": 16000,
+    "ataque": 3300,
+    "chanceCritico": 3.1,
+    "habEspecial": "Picada Venenosa"
+  },
+  {
+    "id": 1061,
+    "nome": "Steampunk Dragon",
+    "tipo": "Steampunk",
+    "nivel": 162,
+    "vida": 16200,
+    "ataque": 3350,
+    "chanceCritico": 3.15,
+    "habEspecial": "Engrenagens"
+  },
+  {
+    "id": 1062,
+    "nome": "Dark Fire Dragon",
+    "tipo": "Dark Fire",
+    "nivel": 165,
+    "vida": 16500,
+    "ataque": 3400,
+    "chanceCritico": 3.2,
+    "habEspecial": "Chama Sombria"
+  },
+  {
+    "id": 1063,
+    "nome": "Butterfly Dragon",
+    "tipo": "Butterfly",
+    "nivel": 168,
+    "vida": 16800,
+    "ataque": 3450,
+    "chanceCritico": 3.25,
+    "habEspecial": "Asas de Borboleta"
+  },
+  {
+    "id": 1064,
+    "nome": "Robot Dragon",
+    "tipo": "Robot",
+    "nivel": 170,
+    "vida": 17000,
+    "ataque": 3500,
+    "chanceCritico": 3.3,
+    "habEspecial": "Braco Robotico"
+  },
+  {
+    "id": 1065,
+    "nome": "Pure Terra Dragon",
+    "tipo": "Pure Terra",
+    "nivel": 172,
+    "vida": 17200,
+    "ataque": 3550,
+    "chanceCritico": 3.35,
+    "habEspecial": "Poder Puro da Terra"
+  },
+  {
+    "id": 1066,
+    "nome": "Pure Flame Dragon",
+    "tipo": "Pure Flame",
+    "nivel": 175,
+    "vida": 17500,
+    "ataque": 3600,
+    "chanceCritico": 3.4,
+    "habEspecial": "Poder Puro do Fogo"
+  },
+  {
+    "id": 1067,
+    "nome": "Pure Sea Dragon",
+    "tipo": "Pure Sea",
+    "nivel": 178,
+    "vida": 17800,
+    "ataque": 3650,
+    "chanceCritico": 3.45,
+    "habEspecial": "Poder Puro do Mar"
+  },
+  {
+    "id": 1068,
+    "nome": "Pure Nature Dragon",
+    "tipo": "Pure Nature",
+    "nivel": 180,
+    "vida": 18000,
+    "ataque": 3700,
+    "chanceCritico": 3.5,
+    "habEspecial": "Poder Puro da Natureza"
+  },
+  {
+    "id": 1069,
+    "nome": "Pure Electric Dragon",
+    "tipo": "Pure Electric",
+    "nivel": 182,
+    "vida": 18200,
+    "ataque": 3750,
+    "chanceCritico": 3.55,
+    "habEspecial": "Poder Puro Eletrico"
+  },
+  {
+    "id": 1070,
+    "nome": "Pure Ice Dragon",
+    "tipo": "Pure Ice",
+    "nivel": 185,
+    "vida": 18500,
+    "ataque": 3800,
+    "chanceCritico": 3.6,
+    "habEspecial": "Poder Puro do Gelo"
+  },
+  {
+    "id": 1071,
+    "nome": "Pure Metal Dragon",
+    "tipo": "Pure Metal",
+    "nivel": 188,
+    "vida": 18800,
+    "ataque": 3850,
+    "chanceCritico": 3.65,
+    "habEspecial": "Poder Puro do Metal"
+  },
+  {
+    "id": 1072,
+    "nome": "Pure Dark Dragon",
+    "tipo": "Pure Dark",
+    "nivel": 190,
+    "vida": 19000,
+    "ataque": 3900,
+    "chanceCritico": 3.7,
+    "habEspecial": "Poder Puro das Trevas"
+  },
+  {
+    "id": 1073,
+    "nome": "Pure Dragon",
+    "tipo": "Pure",
+    "nivel": 192,
+    "vida": 19200,
+    "ataque": 3950,
+    "chanceCritico": 3.75,
+    "habEspecial": "Poder Puro"
+  },
+  {
+    "id": 1074,
+    "nome": "Paladin Dragon",
+    "tipo": "Paladin",
+    "nivel": 195,
+    "vida": 19500,
+    "ataque": 4000,
+    "chanceCritico": 3.8,
+    "habEspecial": "Escudo Sagrado"
+  },
+  {
+    "id": 1075,
+    "nome": "Fossil Dragon",
+    "tipo": "Fossil",
+    "nivel": 198,
+    "vida": 19800,
+    "ataque": 4050,
+    "chanceCritico": 3.85,
+    "habEspecial": "Fossil Revivido"
+  },
+  {
+    "id": 1076,
+    "nome": "Seahorse Dragon",
+    "tipo": "Seahorse",
+    "nivel": 200,
+    "vida": 20000,
+    "ataque": 4100,
+    "chanceCritico": 3.9,
+    "habEspecial": "Cauda de Cavalo Marinho"
+  },
+  {
+    "id": 1077,
+    "nome": "Sky Dragon",
+    "tipo": "Sky",
+    "nivel": 202,
+    "vida": 20200,
+    "ataque": 4150,
+    "chanceCritico": 3.95,
+    "habEspecial": "Voo Celestial"
+  },
+  {
+    "id": 1078,
+    "nome": "Bat Dragon",
+    "tipo": "Bat",
+    "nivel": 205,
+    "vida": 20500,
+    "ataque": 4200,
+    "chanceCritico": 4,
+    "habEspecial": "Ecolocalizacao"
+  },
+  {
+    "id": 1079,
+    "nome": "Aztec Dragon",
+    "tipo": "Aztec",
+    "nivel": 208,
+    "vida": 20800,
+    "ataque": 4250,
+    "chanceCritico": 4.05,
+    "habEspecial": "Sacrificio"
+  },
+  {
+    "id": 1080,
+    "nome": "Chinese Dragon",
+    "tipo": "Chinese",
+    "nivel": 210,
+    "vida": 21000,
+    "ataque": 4300,
+    "chanceCritico": 4.1,
+    "habEspecial": "Sorte Chinesa"
+  },
+  {
+    "id": 1081,
+    "nome": "King Dragon",
+    "tipo": "King",
+    "nivel": 212,
+    "vida": 21200,
+    "ataque": 4350,
+    "chanceCritico": 4.15,
+    "habEspecial": "Coroa Real"
+  },
+  {
+    "id": 1082,
+    "nome": "Wizard Dragon",
+    "tipo": "Wizard",
+    "nivel": 215,
+    "vida": 21500,
+    "ataque": 4400,
+    "chanceCritico": 4.2,
+    "habEspecial": "Feitico"
+  },
+  {
+    "id": 1084,
+    "nome": "Plankton Dragon",
+    "tipo": "Plankton",
+    "nivel": 220,
+    "vida": 22000,
+    "ataque": 4500,
+    "chanceCritico": 4.3,
+    "habEspecial": "Filtro de Agua"
+  },
+  {
+    "id": 1086,
+    "nome": "Evil Pumpkin Dragon",
+    "tipo": "Evil Pumpkin",
+    "nivel": 225,
+    "vida": 22500,
+    "ataque": 4600,
+    "chanceCritico": 4.4,
+    "habEspecial": "Abobora Maligna"
+  },
+  {
+    "id": 1087,
+    "nome": "Viking Dragon",
+    "tipo": "Viking",
+    "nivel": 228,
+    "vida": 22800,
+    "ataque": 4650,
+    "chanceCritico": 4.45,
+    "habEspecial": "Machado de Batalha"
+  },
+  {
+    "id": 1088,
+    "nome": "Jelly Dragon",
+    "tipo": "Jelly",
+    "nivel": 230,
+    "vida": 23000,
+    "ataque": 4700,
+    "chanceCritico": 4.5,
+    "habEspecial": "Geleia Elastica"
+  },
+  {
+    "id": 1089,
+    "nome": "Quetzal Dragon",
+    "tipo": "Quetzal",
+    "nivel": 232,
+    "vida": 23200,
+    "ataque": 4750,
+    "chanceCritico": 4.55,
+    "habEspecial": "Penas Coloridas"
+  },
+  {
+    "id": 1090,
+    "nome": "Queen Dragon",
+    "tipo": "Queen",
+    "nivel": 235,
+    "vida": 23500,
+    "ataque": 4800,
+    "chanceCritico": 4.6,
+    "habEspecial": "Graca Real"
+  },
+  {
+    "id": 1091,
+    "nome": "Thanksgiving Dragon",
+    "tipo": "Thanksgiving",
+    "nivel": 238,
+    "vida": 23800,
+    "ataque": 4850,
+    "chanceCritico": 4.65,
+    "habEspecial": "Fartura"
+  },
+  {
+    "id": 1092,
+    "nome": "Santa Dragon",
+    "tipo": "Santa",
+    "nivel": 240,
+    "vida": 24000,
+    "ataque": 4900,
+    "chanceCritico": 4.7,
+    "habEspecial": "Presente Surpresa"
+  },
+  {
+    "id": 1093,
+    "nome": "Ghost Dragon",
+    "tipo": "Ghost",
+    "nivel": 242,
+    "vida": 24200,
+    "ataque": 4950,
+    "chanceCritico": 4.75,
+    "habEspecial": "Toque Fantasma"
+  },
+  {
+    "id": 1094,
+    "nome": "Deep Forest Dragon",
+    "tipo": "Deep Forest",
+    "nivel": 245,
+    "vida": 24500,
+    "ataque": 5000,
+    "chanceCritico": 4.8,
+    "habEspecial": "Crescimento Rapido"
+  },
+  {
+    "id": 1095,
+    "nome": "Ninja Dragon",
+    "tipo": "Ninja",
+    "nivel": 248,
+    "vida": 24800,
+    "ataque": 5050,
+    "chanceCritico": 4.85,
+    "habEspecial": "Shuriken"
+  },
+  {
+    "id": 1096,
+    "nome": "Ice&Fire Dragon",
+    "tipo": "Ice&Fire",
+    "nivel": 250,
+    "vida": 25000,
+    "ataque": 5100,
+    "chanceCritico": 4.9,
+    "habEspecial": "Equilibrio Elemental"
+  },
+  {
+    "id": 1097,
+    "nome": "Aurora Dragon",
+    "tipo": "Aurora",
+    "nivel": 252,
+    "vida": 25200,
+    "ataque": 5150,
+    "chanceCritico": 4.95,
+    "habEspecial": "Luzes do Norte"
+  },
+  {
+    "id": 1098,
+    "nome": "Music Dragon",
+    "tipo": "Music",
+    "nivel": 255,
+    "vida": 25500,
+    "ataque": 5200,
+    "chanceCritico": 5,
+    "habEspecial": "Melodia Encantadora"
+  },
+  {
+    "id": 1099,
+    "nome": "Block Dragon",
+    "tipo": "Block",
+    "nivel": 258,
+    "vida": 25800,
+    "ataque": 5250,
+    "chanceCritico": 5.05,
+    "habEspecial": "Construcao de Blocos"
+  },
+  {
+    "id": 1100,
+    "nome": "Butterfly Dragon",
+    "tipo": "Butterfly",
+    "nivel": 260,
+    "vida": 26000,
+    "ataque": 5300,
+    "chanceCritico": 5.1,
+    "habEspecial": "Po de Borboleta"
+  },
+  {
+    "id": 1101,
+    "nome": "Alien Dragon",
+    "tipo": "Alien",
+    "nivel": 262,
+    "vida": 26200,
+    "ataque": 5350,
+    "chanceCritico": 5.15,
+    "habEspecial": "Raio Alienigena"
+  },
+  {
+    "id": 1102,
+    "nome": "Great White Dragon",
+    "tipo": "Great White",
+    "nivel": 265,
+    "vida": 26500,
+    "ataque": 5400,
+    "chanceCritico": 5.2,
+    "habEspecial": "Mordida Poderosa"
+  },
+  {
+    "id": 1103,
+    "nome": "Pharaoh Dragon",
+    "tipo": "Pharaoh",
+    "nivel": 268,
+    "vida": 26800,
+    "ataque": 5450,
+    "chanceCritico": 5.25,
+    "habEspecial": "Maldicao do Farao"
+  },
+  {
+    "id": 1104,
+    "nome": "Paradise Dragon",
+    "tipo": "Paradise",
+    "nivel": 270,
+    "vida": 27000,
+    "ataque": 5500,
+    "chanceCritico": 5.3,
+    "habEspecial": "Fruta Proibida"
+  },
+  {
+    "id": 1105,
+    "nome": "Cool Fire Dragon",
+    "tipo": "Cool Fire",
+    "nivel": 272,
+    "vida": 27200,
+    "ataque": 5550,
+    "chanceCritico": 5.35,
+    "habEspecial": "Fogo Gelado"
+  },
+  {
+    "id": 1106,
+    "nome": "Octopus Dragon",
+    "tipo": "Octopus",
+    "nivel": 275,
+    "vida": 27500,
+    "ataque": 5600,
+    "chanceCritico": 5.4,
+    "habEspecial": "Tinta Defensiva"
+  },
+  {
+    "id": 1107,
+    "nome": "Jellyfish Dragon",
+    "tipo": "Jellyfish",
+    "nivel": 278,
+    "vida": 27800,
+    "ataque": 5650,
+    "chanceCritico": 5.45,
+    "habEspecial": "Choque de Agua Viva"
+  },
+  {
+    "id": 1108,
+    "nome": "Carnival Dragon",
+    "tipo": "Carnival",
+    "nivel": 280,
+    "vida": 28000,
+    "ataque": 5700,
+    "chanceCritico": 5.5,
+    "habEspecial": "Confete Magico"
+  },
+  {
+    "id": 1109,
+    "nome": "Love Dragon",
+    "tipo": "Love",
+    "nivel": 282,
+    "vida": 28200,
+    "ataque": 5750,
+    "chanceCritico": 5.55,
+    "habEspecial": "Flecha do Cupido"
+  }
 ]
