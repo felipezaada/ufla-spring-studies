@@ -39,6 +39,10 @@ public class DragaoService {
         return jsonDragoes.escreverNomes(listaDragoes.getDragoesTemp());
     }
 
+    public void salvarAlteracoes(){
+        jsonDragoes.salvarAlteracoes(listaDragoes.getDragoesTemp());
+    }
+
     public void ordenarDragoes(int entrada){
         ordenadorDragoes.quickSort(listaDragoes.getDragoesTemp(), 0, listaDragoes.getDragoesTemp().size() - 1, entrada);
     }

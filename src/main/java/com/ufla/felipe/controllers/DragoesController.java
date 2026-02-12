@@ -18,7 +18,7 @@ public class DragoesController {
         this.dragaoService = dragaoService;
     }
 
-    @GetMapping("/escrever")
+    @GetMapping("/dragoes")
     public String escrever(){
         return "Lista Temporária: \n" + dragaoService.escreverDragoesTemp() +
                 "\nLista Definitiva: \n" + dragaoService.escreverDragoesDefinitivo();
@@ -41,6 +41,11 @@ public class DragoesController {
     @PostMapping("/inserir")
     public void inserir(@RequestBody List<DragaoDTO> novosDragoes){
         dragaoService.inserirDragao(novosDragoes);
+    }
+
+    @PostMapping("/salvar")
+    public void salvar(){
+        dragaoService.salvarAlteracoes();
     }
 
     @DeleteMapping("/delete")
