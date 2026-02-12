@@ -3,7 +3,7 @@ package com.ufla.felipe.service;
 import com.ufla.felipe.component.BuscadorDragoes;
 import com.ufla.felipe.component.ListaDragoes;
 import com.ufla.felipe.component.OrdenadorDragoes;
-import com.ufla.felipe.component.jsonDragoes;
+import com.ufla.felipe.component.JsonDragoes;
 import com.ufla.felipe.models.DragaoDTO;
 import jakarta.annotation.PostConstruct;
 import org.springframework.stereotype.Service;
@@ -16,9 +16,9 @@ public class DragaoService {
     private final BuscadorDragoes buscadorDragoes;
     private final ListaDragoes listaDragoes;
     private final OrdenadorDragoes ordenadorDragoes;
-    private final jsonDragoes jsonDragoes;
+    private final JsonDragoes jsonDragoes;
 
-    public DragaoService(BuscadorDragoes buscadorDragoes, ListaDragoes listaDragoes, OrdenadorDragoes ordenadorDragoes, jsonDragoes jsonDragoes) {
+    public DragaoService(BuscadorDragoes buscadorDragoes, ListaDragoes listaDragoes, OrdenadorDragoes ordenadorDragoes, JsonDragoes jsonDragoes) {
         this.buscadorDragoes = buscadorDragoes;
         this.listaDragoes = listaDragoes;
         this.ordenadorDragoes = ordenadorDragoes;
@@ -41,6 +41,7 @@ public class DragaoService {
 
     public void salvarAlteracoes(){
         jsonDragoes.salvarAlteracoes(listaDragoes.getDragoesTemp());
+        jsonDragoes.carregarDragoesJSON(listaDragoes.getDragoesDefinitivo());
     }
 
     public void ordenarDragoes(int entrada){
