@@ -28,6 +28,7 @@ public class DragaoService {
     @PostConstruct
     public void init() {
         jsonDragoes.carregarDragoesJSON();
+        listaDragoes.cloneTemp();
         System.out.println(jsonDragoes.escreverNomes());
     }
 
@@ -36,7 +37,7 @@ public class DragaoService {
     }
 
     public void ordenarDragoes(int entrada){
-        ordenadorDragoes.quickSort(0, listaDragoes.contaDragao() - 1, entrada);
+        ordenadorDragoes.quickSort(listaDragoes.getDragoesTemp(), 0, listaDragoes.contaDragao() - 1, entrada);
     }
 
     public String buscaDragao(String nome){
@@ -45,6 +46,10 @@ public class DragaoService {
 
     public void inserirDragao(List<DragaoDTO> dragaoTemp){
         listaDragoes.inserirDragao(dragaoTemp);
+    }
+
+    public boolean deletarDragao(long id){
+        return listaDragoes.deletarDragao(id);
     }
 
 }

@@ -2,6 +2,8 @@ package com.ufla.felipe.controllers;
 
 import com.ufla.felipe.models.DragaoDTO;
 import com.ufla.felipe.service.DragaoService;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -40,4 +42,10 @@ public class DragoesController {
         dragaoService.inserirDragao(novosDragoes);
     }
 
+    @DeleteMapping("/delete")
+    public ResponseEntity<String> deletar(@RequestParam long id) {
+        boolean removido = dragaoService.deletarDragao(id);
+        if (removido) return ResponseEntity.ok("Dragão removido!");
+        else return ResponseEntity.status(HttpStatus.NOT_FOUND).body("Dragão não encontrado.");
+    }
 }

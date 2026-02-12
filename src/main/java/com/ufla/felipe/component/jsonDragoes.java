@@ -2,6 +2,7 @@ package com.ufla.felipe.component;
 
 import com.ufla.felipe.models.DragaoDTO;
 import org.springframework.core.io.ClassPathResource;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Component;
 import tools.jackson.core.type.TypeReference;
 import tools.jackson.databind.ObjectMapper;
@@ -31,11 +32,20 @@ public class jsonDragoes {
 
     public String escreverNomes(){
         StringBuilder nomes = new StringBuilder();
+        nomes.append("LISTA TEMPORARIA").append("\n");
+        for (int i = 0 ; i < listaDragoes.contaDragao() ; i++) {
+            DragaoDTO dragaoTemp =  listaDragoes.getDragaoTemp(i);
+            nomes.append(dragaoTemp.getId()).append(" Nome: ").append(dragaoTemp.getNome())
+                    .append(" Tipo: ").append(dragaoTemp.getTipo()).append('\n');
+        }
+
+        nomes.append("\n").append("LISTA DEFINITIVA").append("\n");
         for (int i = 0 ; i < listaDragoes.contaDragao() ; i++) {
             DragaoDTO dragaoTemp =  listaDragoes.getDragao(i);
             nomes.append(dragaoTemp.getId()).append(" Nome: ").append(dragaoTemp.getNome())
                     .append(" Tipo: ").append(dragaoTemp.getTipo()).append('\n');
         }
+
         return nomes.toString();
     }
 }

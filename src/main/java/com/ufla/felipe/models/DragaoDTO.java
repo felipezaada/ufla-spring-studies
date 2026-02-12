@@ -7,7 +7,7 @@ import lombok.Setter;
 @Setter
 
 public class DragaoDTO {
-    private int id;
+    private long id; // id's longos, optei por long
     private String nome;
     private String tipo;
     private int nivel;
