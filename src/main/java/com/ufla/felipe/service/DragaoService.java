@@ -37,11 +37,11 @@ public class DragaoService {
     }
 
     public void ordenarDragoes(int entrada){
-        ordenadorDragoes.quickSort(listaDragoes.getDragoesTemp(), 0, listaDragoes.contaDragao() - 1, entrada);
+        ordenadorDragoes.quickSort(listaDragoes.getDragoesTemp(), 0, listaDragoes.getDragoesTemp().size() - 1, entrada);
     }
 
     public String buscaDragao(String nome){
-        return "Posição do Dragão -> " + buscadorDragoes.buscaBinaria(0, listaDragoes.contaDragao() - 1, nome);
+        return "Posição do Dragão -> " + buscadorDragoes.buscaBinaria(0, listaDragoes.getDragoesTemp().size() - 1, nome);
     }
 
     public void inserirDragao(List<DragaoDTO> dragaoTemp){

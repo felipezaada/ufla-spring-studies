@@ -11,31 +11,25 @@ import java.util.List;
 public class ListaDragoes {
 
     @Getter
-    final private List<DragaoDTO> dragoesSistema = new ArrayList<>();
+    final private List<DragaoDTO> dragoesDefinitivo = new ArrayList<>();
     @Getter
     final private List<DragaoDTO> dragoesTemp = new ArrayList<>();
 
-    public void cloneTemp() {
-        dragoesTemp.addAll(dragoesSistema);
-    }
+    public void cloneTemp() { dragoesTemp.addAll(dragoesDefinitivo); }
 
     public DragaoDTO getDragao(int posicao){
-        return dragoesSistema.get(posicao);
+        return dragoesDefinitivo.get(posicao);
     }
 
     public DragaoDTO getDragaoTemp(int posicao){
         return dragoesTemp.get(posicao);
     }
 
-    public int contaDragao(){
-        return dragoesSistema.size();
-    }
-
     public void inserirDragao(List<DragaoDTO> novoDragao){
-        dragoesSistema.addAll(novoDragao);
+        dragoesTemp.addAll(novoDragao);
     }
 
     public boolean deletarDragao(long id){
-        return dragoesSistema.removeIf(dragao -> dragao.getId() == id); // função lambda, não conhecia
+        return dragoesTemp.removeIf(dragao -> dragao.getId() == id); // função lambda, não conhecia
     }
 }
